@@ -1,0 +1,450 @@
+/* --- OFFLINE FONTS CONFIG --- */
+
+/* Body Font */
+@font-face {
+    font-family: 'Plus Jakarta Sans';
+    src: url('assets/fonts/PlusJakartaSans-Regular.woff2') format('woff2');
+    font-weight: 400;
+}
+
+/* Heading Font */
+@font-face {
+    font-family: 'Playfair Display';
+    src: url('assets/fonts/PlayfairDisplay-Bold.woff2') format('woff2');
+    font-weight: 700;
+}
+
+/* --- LOGO & ICON STYLES --- */
+.logo-text {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 900;
+}
+
+/* Baki ka CSS pehle jaisa... */
+body { font-family: 'Plus Jakarta Sans', sans-serif; }
+.font-display { font-family: 'Playfair Display', serif; }
+/* --- EXISTING STYLES --- */
+html { scroll-behavior: smooth; }
+body { 
+    font-family: 'Plus Jakarta Sans', sans-serif; 
+    transition: background-color 0.4s ease; 
+}
+* {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.font-display { font-family: 'Playfair Display', serif; }
+/* Unique Logo Gradient */
+.logo-text {
+    background: linear-gradient(135deg, #FF512F 0%, #DD2476 100%); /* Deep Orange to Pinkish Red */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+
+/* Custom Animation for Logo */
+@keyframes logo-float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-3px); }
+    100% { transform: translateY(0px); }
+}
+
+.group:hover .relative {
+    animation: logo-float 2s ease-in-out infinite;
+}
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.dark .glass-card {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.hero-bg {
+    background: 
+                url('images/images4.jpg'); /* Local image path */
+    background-size: cover;
+    background-position: center;
+}
+.nav-link {
+    position: relative;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background: #f97316;
+    transition: width 0.3s;
+}
+
+.nav-link:hover::after { width: 100%; }
+
+#cart-sidebar { transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1); }
+
+.type-indicator {
+    border: 2px solid;
+    padding: 2px;
+    display: inline-flex;
+    width: 16px;
+    height: 16px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2px;
+}
+.veg-icon { border-color: #22c55e; }
+.veg-icon div { background: #22c55e; width: 8px; height: 8px; border-radius: 50%; }
+.nonveg-icon { border-color: #ef4444; }
+.nonveg-icon div { background: #ef4444; width: 8px; height: 8px; border-radius: 50%; }
+.logo-text {
+    background: linear-gradient(135deg, #f97316, #ef4444);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Plus Jakarta Sans', sans-serif; /* Agar font download kiya hai toh */
+}
+/* Login Button Glassy Glow */
+#login-btn {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(4px);
+}
+
+/* User Profile Badge Animation */
+#user-profile {
+    animation: slideIn 0.4s ease-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Navbar Link Hover Effect */
+.nav-link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #f97316;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: #f97316;
+}/* Page ko freeze karne ke liye aur horizontal scroll hatane ke liye */
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Page side mein nahi hilega */
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Scrollbar ki wajah se jo 10-15px ka jhatka lagta hai use fix karein */
+html {
+    scrollbar-gutter: stable; 
+}
+/* Offers Card ka Glow Effect */
+.offer-card {
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.offer-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 25px 50px -12px rgba(249, 115, 22, 0.4);
+}
+
+/* Floating Navbar Animation */
+.nav-scrolled {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    height: 70px !important;
+    background: rgba(255, 255, 255, 0.7) !important;
+    backdrop-filter: blur(20px) saturate(180%);
+}
+
+.dark .nav-scrolled {
+    background: rgba(15, 23, 42, 0.7) !important;
+}
+
+/* Hide Scrollbar for Offers */
+.no-scrollbar::-webkit-scrollbar {
+    display: none;
+}
+.no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+.hero-bg {
+    transition: background-image 1.2s ease-in-out;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: brightness(0.6); /* Text clear dikhne ke liye image ko thoda dark rakha hai */
+}
+/* Success Overlay Styling */
+.success-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.95);
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+}
+
+.dark .success-overlay {
+    background: rgba(15, 23, 42, 0.98);
+}
+
+.success-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 3rem;
+    text-align: center;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 90%;
+    transform: scale(0.8);
+    opacity: 0;
+    animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.dark .success-card {
+    background: #1e293b;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+/* Animations */
+@keyframes popIn {
+    to { transform: scale(1); opacity: 1; }
+}
+
+.check-container {
+    width: 100px;
+    height: 100px;
+    background: #f0fdf4;
+    color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    font-size: 3rem;
+    animation: bounce 1s infinite alternate;
+}
+
+@keyframes bounce {
+    from { transform: translateY(0); }
+    to { transform: translateY(-10px); }
+}
+/* --- CHECKOUT & SUCCESS CUSTOM STYLES --- */
+
+/* Modal Backdrop Blur */
+#checkout-modal {
+    backdrop-filter: blur(8px);
+    animation: fadeIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Input & Select Field Styling */
+#cust-address, #payment-method {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#cust-address:focus, #payment-method:focus {
+    border-color: #f97316;
+    background: white;
+    box-shadow: 0 0 0 4px rgba(249, 115, 22, 0.1);
+}
+
+.dark #cust-address:focus, .dark #payment-method:focus {
+    background: #1e293b;
+}
+
+/* Confirm Button Pulse Effect */
+.confirm-btn-animate {
+    position: relative;
+    overflow: hidden;
+}
+
+.confirm-btn-animate::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255,255,255,0.2);
+    transform: rotate(45deg);
+    transition: 0.5s;
+}
+
+.confirm-btn-animate:hover::after {
+    left: 120%;
+}
+
+/* Success Tick Animation */
+.success-icon-circle {
+    width: 80px;
+    height: 80px;
+    background: #dcfce7;
+    color: #22c55e;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    margin: 0 auto 1rem;
+    animation: scaleUp 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+}
+
+.dark .success-icon-circle {
+    background: rgba(34, 197, 94, 0.2);
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Order Details Summary Box */
+.order-summary-box {
+    background: linear-gradient(145deg, #f8fafc, #f1f5f9);
+    border: 1px inset rgba(0,0,0,0.05);
+}
+
+.dark .order-summary-box {
+    background: linear-gradient(145deg, #0f172a, #1e293b);
+    border-color: rgba(255,255,255,0.05);
+}
+
+/* Shake animation for invalid address */
+.shake {
+    animation: shake 0.4s ease-in-out;
+}
+
+.shake { animation: shake 0.4s ease-in-out; border-color: #ef4444 !important; }
+@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-8px); }
+  75% { transform: translateX(8px); }
+}
+/* --- Contact Section Styles --- */
+
+#section-contact {
+    background: linear-gradient(to bottom, transparent, rgba(249, 115, 22, 0.03));
+}
+
+/* Glass Card Effect */
+.glass-card {
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.dark .glass-card {
+    background: rgba(15, 23, 42, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Input Focus Effects */
+#section-contact input, 
+#section-contact textarea {
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#section-contact input:focus, 
+#section-contact textarea:focus {
+    background-color: white;
+    border-color: #f97316;
+    box-shadow: 0 10px 25px -5px rgba(249, 115, 22, 0.1);
+}
+
+.dark #section-contact input:focus, 
+.dark #section-contact textarea:focus {
+    background-color: #1e293b; /* slate-800 */
+}
+
+/* Social Icons Hover */
+#section-contact a i {
+    transition: transform 0.3s ease;
+}
+
+#section-contact a:hover i {
+    transform: scale(1.2) rotate(8deg);
+}
+
+/* Submit Button Shine */
+#section-contact button {
+    position: relative;
+    overflow: hidden;
+}
+
+#section-contact button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 20%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.6s ease;
+}
+
+#section-contact button:hover::after {
+    left: 120%;
+}
+/* Swiper container ka size set karein */
+.swiper {
+  width: 100%;
+  height: 400px; /* Apni marzi ke mutabiq height dein */
+}
+
+/* Image ko slide mein fit karne ke liye */
+.swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Isse image stretch nahi hogi */
+}
