@@ -12,8 +12,6 @@ Food Ordering Website ek web-based application hai jahan users online food brows
 📱 Responsive design (Mobile + Desktop)
 🛠️ Tech Stack
 Frontend: HTML, CSS, JavaScript
-Backend: (agar use kiya ho to add karo – e.g., Node.js / PHP)
-Database: (MySQL / MongoDB / Firebase – jo bhi use kiya ho)
 📂 Project Structure
 Food_Odering_website/
 │── index.html
@@ -24,6 +22,7 @@ Food_Odering_website/
 ⚙️ Installation & Setup
 Clone the repository:
 git clone https://github.com/Nandini-khodre/Food_Odering_website.git
+
 Step 2: Open in VS Code
 Step 3: Run with Live Server
 index.html par right click karo
