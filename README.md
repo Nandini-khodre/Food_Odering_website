@@ -1,31 +1,64 @@
 # Food_Odering_website
-🍴 FoodHub - Indore's Premier Food Delivery Platform
-FoodHub ek high-performance, responsive, aur visually stunning food delivery web application hai. Isse khas taur par Indore ke food culture aur fast-paced delivery needs ko dhyan mein rakh kar banaya gaya hai.
 
-✨ Key Features
-Modern Glassmorphic UI: Tailwind CSS ka use karke ek clean, "glassy" aur interactive interface.
+🍔 Food Ordering Website
+📌 Project Description
 
-Indore Centric: Vijay Nagar (Indore) based operation details aur local items jaise Indori-Poha-Jalebi ka support.
+Food Ordering Website ek web-based application hai jahan users online food browse, select aur order kar sakte hain. Ye project users ko simple aur user-friendly interface provide karta hai jisse wo easily food items dekh sakte hain aur order place kar sakte hain.
 
-Dark Mode Support: User preference ke hisaab se light aur dark themes ke beech seamless switching.
-
-Dynamic Cart System: Real-time item count, total price calculation, aur flexible checkout flow.
-
-Optimized Auth: Simple login aur registration process (Direct database entry, no complex verification).
-
-Fully Responsive: Mobile-first approach jo har screen size par perfect dikhta hai.
-
-Interactive Components: 3D-style animations, hover effects, aur smooth transitions.
-
+🚀 Features
+🏠 Home Page with food categories
+🍕 Food items listing
+🛒 Add to Cart functionality
+💳 Order / Checkout system
+👤 User-friendly interface
+📱 Responsive design (Mobile + Desktop)
 🛠️ Tech Stack
-Frontend: HTML5, Tailwind CSS, JavaScript (ES6+)
+Frontend: HTML, CSS, JavaScript
+Backend: (agar use kiya ho to add karo – e.g., Node.js / PHP)
+Database: (MySQL / MongoDB / Firebase – jo bhi use kiya ho)
+📂 Project Structure
+Food_Odering_website/
+│── index.html
+│── style.css
+│── script.js
+│── images/
+│── README.md
+⚙️ Installation & Setup
+Clone the repository:
+git clone https://github.com/Nandini-khodre/Food_Odering_website.git
+Step 2: Open in VS Code
+Step 3: Run with Live Server
+index.html par right click karo
+"Open with Live Server" select karo
 
-Backend: PHP (backend logic & API integration)
+👉 Website browser me automatically open ho jayegi
+🎯 Usage
+Website open karo
+Food items browse karo
+Cart me add karo
+Order place karo
+📸 Screenshots
+![Uploading Screenshot 2026-04-09 135037.png…]()
 
-Database: MySQL (User data, Menu, aur Order management)
 
-Typography: * Headings: Playfair Display
+🌟 Future Improvements
+🔐 User login/signup system
+💳 Online payment integration
+📦 Order tracking system
+🧾 Admin dashboard
+🤝 Contributing
 
-Body: Plus Jakarta Sans
+Contributions welcome hain!
 
-Icons: Font Awesome 6.0
+Fork the repo
+New branch create karo
+Changes commit karo
+Pull request bhejo
+📧 Contact
+
+👩‍💻 Nandini
+
+GitHub: https://github.com/Nandini-khodre
+📜 License
+
+This project is open-source and free to use.
