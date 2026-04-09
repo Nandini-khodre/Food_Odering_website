@@ -266,9 +266,7 @@ html {
     from { transform: translateY(0); }
     to { transform: translateY(-10px); }
 }
-/* --- CHECKOUT & SUCCESS CUSTOM STYLES --- */
 
-/* Modal Backdrop Blur */
 #checkout-modal {
     backdrop-filter: blur(8px);
     animation: fadeIn 0.3s ease-out;
@@ -441,7 +439,6 @@ html {
   height: 400px; /* Apni marzi ke mutabiq height dein */
 }
 
-/* Image ko slide mein fit karne ke liye */
 .swiper-slide img {
   display: block;
   width: 100%;
