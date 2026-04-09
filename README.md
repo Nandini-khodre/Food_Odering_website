@@ -1,8 +1,6 @@
 # Food_Odering_website
-
 🍔 Food Ordering Website
 📌 Project Description
-
 Food Ordering Website ek web-based application hai jahan users online food browse, select aur order kar sakte hain. Ye project users ko simple aur user-friendly interface provide karta hai jisse wo easily food items dekh sakte hain aur order place kar sakte hain.
 
 🚀 Features
@@ -37,8 +35,6 @@ Website open karo
 Food items browse karo
 Cart me add karo
 Order place karo
-📸 Screenshots
-![Uploading Screenshot 2026-04-09 135037.png…]()
 
 
 🌟 Future Improvements
@@ -47,16 +43,7 @@ Order place karo
 📦 Order tracking system
 🧾 Admin dashboard
 🤝 Contributing
-
-Contributions welcome hain!
-
-Fork the repo
-New branch create karo
-Changes commit karo
-Pull request bhejo
-📧 Contact
-
-👩‍💻 Nandini
+<img width="1880" height="1014" alt="Screenshot 2026-04-09 135037" src="https://github.com/user-attachments/assets/c6835b1d-87eb-4865-89f2-c88acb293f7c" />
 
 GitHub: https://github.com/Nandini-khodre
 📜 License
