@@ -65,7 +65,6 @@ function searchFood() {
         if(backNav) backNav.classList.remove('hidden');
         renderDishList(matchedDishes); // Ye function call karega items render karne ke liye
     } 
-    // Agar dish nahi mili toh restaurant dikhao
     else if (matchedRestaurants.length > 0) {
         title.innerText = `Restaurants for "${searchTerm}"`;
         if(backNav) backNav.classList.remove('hidden');
@@ -122,8 +121,6 @@ function renderMenu(resId, resName) {
     document.getElementById('back-nav').classList.remove('hidden');
     const filtered = dishes.filter(d => d.resId === resId);
     renderDishList(filtered);
-    
-    // Removed window.scrollTo to keep page stable
 }
 
 // Helper to render a list of dishes (used by search and menu)
@@ -171,7 +168,6 @@ function changeQty(dishId, delta) {
         cart.push({ ...dish, qty: 1 });
     }
 
-    // Update only the specific button container to prevent page flicker/jump
     const container = document.getElementById(`btn-container-${dishId}`);
     const updatedItem = cart.find(i => i.id === dishId);
     const newQty = updatedItem ? updatedItem.qty : 0;
@@ -282,7 +278,6 @@ function applyCoupon() {
     }
 }
 
-// 5. Checkout & Order Flow
 // 5. Checkout & Order Flow
 function processCheckout() {
     const userName = localStorage.getItem('userName');
